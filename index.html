@@ -3,403 +3,537 @@
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, , maximum-scale=1.0, user-scalable=0" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, , maximum-scale=1.0, user-scalable=0"
+    />
     <link rel="stylesheet" type="text/css" href="styles.css" />
     <title>Document</title>
   </head>
   <body>
     <div class="app-wrapper">
-        <nav class="nav">
-            
-          <div class="container-flex-header">
-            <img
-              id="springlogo"
-              class="spring-logo"
-              src="assets/img/spring-logo.svg"
-              alt="Spring"
-            />
-            <div class="wrapper">
-                <input type="checkbox" id="checkbox" class="wrapper__checkbox">
-                <label for="checkbox" class="wrapper__button">
-                    <span class="wrapper__button-line"></span>
-                    <span class="wrapper__button-line"></span>
-                    <span class="wrapper__button-line"></span>
-                </label>
-                <div class="wrapper__menu">
-                    <a href="#" class="wrapper__menu-link">Why Spring</a>
-                    <a href="#" class="wrapper__menu-link">Learn</a>
-                    <a href="#" class="wrapper__menu-link">Projects</a>
-                    <a href="#" class="wrapper__menu-link">Training</a>
-                    <a href="#" class="wrapper__menu-link">Support</a>
-                    <a href="#" class="wrapper__menu-link">Community</a>
-                </div>
+      <nav class="nav">
+        <div class="container-flex-header">
+          <img
+            id="springlogo"
+            class="spring-logo"
+            src="assets/img/spring-logo.svg"
+            alt="Spring"
+          />
+          <div class="wrapper">
+            <input type="checkbox" id="checkbox" class="wrapper__checkbox" />
+            <label for="checkbox" class="wrapper__button">
+              <span class="wrapper__button-line"></span>
+              <span class="wrapper__button-line"></span>
+              <span class="wrapper__button-line"></span>
+            </label>
+            <div class="wrapper__menu">
+              <a href="#" class="wrapper__menu-link">Why Spring</a>
+              <a href="#" class="wrapper__menu-link">Learn</a>
+              <a href="#" class="wrapper__menu-link">Projects</a>
+              <a href="#" class="wrapper__menu-link">Training</a>
+              <a href="#" class="wrapper__menu-link">Support</a>
+              <a href="#" class="wrapper__menu-link">Community</a>
             </div>
-            <ul class="header-options">
-              <li>
-                <div class="has-menu bold">
-                  <span>Why Spring <span class="thin">˅</span></span>
-                  <div class="nav-arrow">
-                    <ul>
-                        <li><a href="/why-spring">Overview</a></li>
-                        <li><a href="/microservices">Microservices</a></li>
-                        <li><a href="/reactive">Reactive</a></li>
-                        <li><a href="/event-driven">Event Driven</a></li>
-                        <li><a href="/cloud">Cloud</a></li>
-                        <li><a href="/web-applications">Web Applications</a></li>
-                        <li><a href="/serverless">Serverless</a></li>
-                        <li><a href="/batch">Batch</a></li>
-                      </ul>
-                  </div>
+          </div>
+          <ul class="header-options">
+            <li>
+              <div class="has-menu bold">
+                <span>Why Spring <span class="thin">˅</span></span>
+                <div class="nav-arrow">
+                  <ul>
+                    <li><a href="#">Overview</a></li>
+                    <li><a href="#">Microservices</a></li>
+                    <li><a href="#">Reactive</a></li>
+                    <li><a href="#">Event Driven</a></li>
+                    <li><a href="#">Cloud</a></li>
+                    <li><a href="#">Web Applications</a></li>
+                    <li><a href="#">Serverless</a></li>
+                    <li><a href="#">Batch</a></li>
+                  </ul>
                 </div>
-              </li>
-              <li>
-                <div class="has-menu bold" id="learn-hov">
-                  <span>Learn <span class="thin">˅</span></span>
-                  <div class="nav-arrow">
-                    <ul>
-                        <li><a href="/learn">Overview</a></li>
-                        <li><a href="/quickstart">Quickstart</a></li>
-                        <li><a href="/guides">Guides</a></li>
-                        <li><a href="/blog">Blog</a></li>
-                      </ul>
-                  </div>
+              </div>
+            </li>
+            <li>
+              <div class="has-menu bold">
+                <span>Learn <span class="thin">˅</span></span>
+                <div class="nav-arrow">
+                  <ul>
+                    <li><a href="#">Overview</a></li>
+                    <li><a href="#">Quickstart</a></li>
+                    <li><a href="#">Guides</a></li>
+                    <li><a href="#">Blog</a></li>
+                  </ul>
                 </div>
-              </li>
-              <li>
-                <div class="has-menu bold">
-                  <span>Projects <span class="thin">˅</span></span>
-                  <div class="nav-arrow">
-                    <ul>
-                        <li><a href="/projects">Overview</a></li>
-                        <li>
-                          <a  href="/projects/spring-boot">Spring Boot</a>
-                        </li>
-                        <li>
-                          <a href="/projects/spring-framework"
-                            >Spring Framework</a>
-                        </li>
-                        <li>
-                          <a  href="/projects/spring-cloud"
-                            >Spring Cloud</a>
-                        </li>
-                        <li>
-                          <a href="/projects/spring-cloud-dataflow"
-                            >Spring Cloud Data Flow</a>
-                        </li>
-                        <li>
-                          <a href="/projects/spring-data">Spring Data</a>
-                        </li>
-                        <li>
-                          <a href="/projects/spring-integration"
-                            >Spring Integration</a
-                          >
-                        </li>
-                        <li>
-                          <a href="/projects/spring-batch"
-                            >Spring Batch</a
-                          >
-                        </li>
-                        <li>
-                          <a href="/projects/spring-security"
-                            >Spring Security</a>
-                        </li>
-                        <li>
-                          <a href="/projects">View all projects</a>
-                        </li>
-                        <li><a href="#">Development Tools</a></li>
-                        <li><a href="/tools">Spring Tools 4</a></li>
-                        <li>
-                          <a href="https://start.spring.io">Spring Initializr</a>
-                        </li>
-                      </ul>
-                  </div>
+              </div>
+            </li>
+            <li>
+              <div class="has-menu bold">
+                <span>Projects <span class="thin">˅</span></span>
+                <div class="nav-arrow">
+                  <ul>
+                    <li>
+                      <a href="#">Overview</a>
+                    </li>
+                    <li>
+                      <a href="#">Spring Boot</a>
+                    </li>
+                    <li>
+                      <a href="#">Spring Framework</a>
+                    </li>
+                    <li>
+                      <a href="#">Spring Cloud</a>
+                    </li>
+                    <li>
+                      <a href="#">Spring Cloud Data Flow</a>
+                    </li>
+                    <li>
+                      <a href="#">Spring Data</a>
+                    </li>
+                    <li>
+                      <a href="#">Spring Integration</a>
+                    </li>
+                    <li>
+                      <a href="#">Spring Batch</a>
+                    </li>
+                    <li>
+                      <a href="#">Spring Security</a>
+                    </li>
+                    <li>
+                      <a href="#">View all projects</a>
+                    </li>
+                    <li>
+                      <a href="#">Development Tools</a>
+                    </li>
+                    <li>
+                      <a href="#">Spring Tools 4</a>
+                    </li>
+                    <li>
+                      <a href="#">Spring Initializr</a>
+                    </li>
+                  </ul>
                 </div>
-              </li>
-              <li>
-                <div class="has-menu bold" id="learn-hov">
-                    <span>Training</span>
-                    <div class="nav-arrow"></div>
-                  </div>
-              </li>
-              
-              <li>
-                <div class="has-menu bold" id="learn-hov">
-                    <span>Support</span>
-                    <div class="nav-arrow"></div>
-                  </div>
-              </li>
-              <li>
-                <div class="has-menu bold">
-                    <span>Community <span class="thin">˅</span></span>
-                    <div class="nav-arrow">
-                        <ul>
-                            <li><a tabindex="33" href="/community">Overview</a></li>
-                            <li><a tabindex="34" href="/events">Events</a></li>
-                            <li><a tabindex="35" href="/team">Team</a></li>
-                        </ul>
-                    </div>
-                  </div>
-              </li>
-             </ul>
-             </div></nav>
-      </header>
+              </div>
+            </li>
+            <li>
+              <div class="has-menu bold">
+                <span>Training</span>
+              </div>
+            </li>
+            <li>
+              <div class="has-menu bold" id="learn-hov">
+                <span>Support</span>
+              </div>
+            </li>
+            <li>
+              <div class="has-menu bold">
+                <span>Community <span class="thin">˅</span></span>
+                <div class="nav-arrow">
+                  <ul>
+                    <li><a href="/community">Overview</a></li>
+                    <li><a href="/events">Events</a></li>
+                    <li><a href="/team">Team</a></li>
+                  </ul>
+                </div>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </nav>
       <section>
         <div class="container">
-            <h1 class="h1 bold">Projects</h1>
-            <p class="p-large">From configuration to security, web apps to big data—whatever the infrastructure needs <br>
-                of your application may be, there is a Spring Project to help you build it. Start small and <br> use just what you need—Spring is modular by design.</p>
-            </div>
+          <h1 class="h1 bold">Projects</h1>
+          <p class="p-large">
+            From configuration to security, web apps to big data—whatever the
+            infrastructure needs <br />
+            of your application may be, there is a Spring Project to help you
+            build it. Start small and <br />
+            use just what you need—Spring is modular by design.
+          </p>
+        </div>
       </section>
       <div class="content bg-grey">
-          <div class="container">
-              <section>
-                <div class="projects">
-                    <div class="project bg-white">
-                        <div class="project-icon-header">
-                            <img src="/assets/img/spring-boot-icon.svg">
-                        <div class="project-header">
-                            <p class="bold">Spring Boot</p>
-                        </div>
-                        </div>
-                        <div class="project-description">
-                            <p>Takes an opinionated view of building Spring applications and gets you up and running as quickly as possible.</p>
-                        </div>
-                        
-                    </div>
-                    <div class="project bg-white">
-                        <div class="project-icon-header">
-                            <img src="/assets/img/spring-framework-icon.svg">
-                        <div class="project-header">
-                            <p class="bold">Spring Framework</p>
-                        </div>
-                        </div>
-                        <div class="project-description">
-                            <p>Provides core support for dependency <br> injection, transaction management, web apps, data access, messaging, and more.</p>
-                        </div>
-                    </div>
-                    <div class="project bg-white">
-                        <div class="project-icon-header">
-                            <img src="/assets/img/spring-data-icon.svg">
-                        <div class="project-header">
-                            <p class="bold">Spring Data</p>
-                        </div>
-                        </div>
-                        <div class="project-description">
-                            <p>Provides a consistent approach to data <br> access – relational, non-relational,<br> map-reduce, and beyond.</p>
-                        </div>
-                    </div>
-                    <div class="project bg-white">
-                        <div class="project-icon-header">
-                            <img src="/assets/img/spring-cloud-icon.svg">
-                        <div class="project-header">
-                            <p class="bold">Spring Cloud</p>
-                        </div>
-                        </div>
-                        <div class="project-description">
-                            <p>Provides a set of tools for common patterns in distributed systems. Useful for building and deploying microservices.</p>
-                        </div>
-                    </div>
-                    <div class="project bg-white">
-                        <div class="project-icon-header">
-                            <img src="/assets/img/spring-data-flow-icon.svg">
-                        <div class="project-header">
-                            <p class="bold">Spring Cloud Data Flow</p>
-                        </div>
-                        </div>
-                        <div class="project-description">
-                            <p>Provides an orchestration service for<br> composable data microservice applications on modern runtimes.</p>
-                        </div>
-                    </div>
-                    <div class="project bg-white">
-                        <div class="project-icon-header">
-                            <img src="/assets/img/spring-security-icon.svg">
-                        <div class="project-header">
-                            <p class="bold">Spring Security</p>
-                        </div>
-                        </div>
-                        <div class="project-description">
-                            <p>Protects your application with comprehensive and extensible authentication and authorization support.</p>
-                        </div>
-                    </div>
-                    <div class="project bg-white">
-                        <div class="project-icon-header">
-                            <img src="/assets/img/spring-graphql-icon.svg">
-                        <div class="project-header">
-                            <p class="bold">Spring for GraphQL</p>
-                        </div>
-                        </div>
-                        <div class="project-description">
-                            <p>Spring for GraphQL provides support for Spring applications built on GraphQL Java.</p>
-                        </div>
-                    </div>
-                    <div class="project bg-white">
-                        <div class="project-icon-header">
-                            <img src="/assets/img/logo-session-icon.png">
-                        <div class="project-header">
-                            <p class="bold">Spring Session</p>
-                        </div>
-                        </div>
-                        <div class="project-description">
-                            <p>Provides an API and implementations for managing a user’s session information.</p>
-                        </div>
-                    </div>
-                    <div class="project bg-white">
-                        <div class="project-icon-header">
-                            <img src="/assets/img/spring-integration-icon.svg">
-                        <div class="project-header">
-                            <p class="bold">Spring Integration</p>
-                        </div>
-                        </div>
-                        <div class="project-description">
-                            <p>Supports the well-known Enterprise Integration Patterns through lightweight messaging and declarative adapters.</p>
-                        </div>
-                    </div>
-                    <div class="project bg-white">
-                        <div class="project-icon-header">
-                            <img src="/assets/img/spring-hateoas-icon.svg">
-                        <div class="project-header">
-                            <p class="bold">Spring HATEOAS</p>
-                        </div>
-                        </div>
-                        <div class="project-description">
-                            <p>Simplifies creating REST representations that follow the HATEOAS principle.</p>
-                        </div>
-                    </div>
-                    <div class="project bg-white">
-                        <div class="project-icon-header">
-                            <img src="/assets/img/spring-restdocs-icon.png">
-                        <div class="project-header">
-                            <p class="bold">Spring REST Docs</p>
-                        </div>
-                        </div>
-                        <div class="project-description">
-                            <p>Lets you document RESTful services by combining hand-written documentation with auto-generated snippets produced with Spring MVC Test or REST Assured.</p>
-                        </div>
-                    </div>
-                    <div class="project bg-white">
-                        <div class="project-icon-header">
-                            <img src="/assets/img/spring-batch-icon.svg">
-                        <div class="project-header">
-                            <p class="bold">Spring Batch</p>
-                        </div>
-                        </div>
-                        <div class="project-description">
-                            <p>Simplifies and optimizes the work of <br> processing high-volume batch operations.</p>
-                        </div>
-                    </div>
-                    <div class="project bg-white">
-                        <div class="project-icon-header">
-                            <img src="/assets/img/spring-amqp-icon.svg">
-                        <div class="project-header">
-                            <p class="bold">Spring AMQP</p>
-                        </div>
-                        </div>
-                        <div class="project-description">
-                            <p>Applies core Spring concepts to the development of AMQP-based messaging solutions.</p>
-                        </div>
-                    </div>
-                    <div class="project bg-white">
-                        <div class="project-icon-header">
-                            <img src="/assets/img/spring-credHub-icon.svg">
-                        <div class="project-header">
-                            <p class="bold">Spring CredHub</p>
-                        </div>
-                        </div>
-                        <div class="project-description">
-                            <p>Provides client-side support for storing, retrieving, and deleting credentials from a CredHub server running in a Cloud Foundry platform.</p>
-                        </div>
-                    </div>
-                    <div class="project bg-white">
-                        <div class="project-icon-header">
-                            <img src="/assets/img/spring-flo-icon.svg">
-                        <div class="project-header">
-                            <p class="bold">Spring Flo</p>
-                        </div>
-                        </div>
-                        <div class="project-description">
-                            <p>Provides a JavaScript library that offers a basic embeddable HTML5 visual builder for pipelines and simple graphs.</p>
-                        </div>
-                    </div>
-                    <div class="project bg-white">
-                        <div class="project-icon-header">
-                            <img src="/assets/img/spring-kafka-icon.svg">
-                        <div class="project-header">
-                            <p class="bold">Spring Apache Kafka</p>
-                        </div>
-                        </div>
-                        <div class="project-description">
-                            <p>Provides Familiar Spring Abstractions for Apache Kafka.</p>
-                        </div>
-                    </div>
-                    <div class="project bg-white">
-                        <div class="project-icon-header">
-                            <img src="/assets/img/spring-ldap-icon.svg">
-                        <div class="project-header">
-                            <p class="bold">Spring LDAP</p>
-                        </div>
-                        </div>
-                        <div class="project-description">
-                            <p>Simplifies the development of applications that use LDAP by using Spring's familiar template-based approach.</p>
-                        </div>
-                    </div>
-                    <div class="project bg-white">
-                        <div class="project-icon-header">
-                            <img src="/assets/img/spring-shell-icon.svg">
-                        <div class="project-header">
-                            <p class="bold">Spring Shell</p>
-                        </div>
-                        </div>
-                        <div class="project-description">
-                            <p>Makes writing and testing RESTful<br> applications easier with CLI-based<br> resource discovery and interaction.</p>
-                        </div>
-                    </div>
-                    <div class="project bg-white">
-                        <div class="project-icon-header">
-                            <img src="/assets/img/spring-statemachine-icon.svg">
-                        <div class="project-header">
-                            <p class="bold">Spring Statemachine</p>
-                        </div>
-                        </div>
-                        <div class="project-description">
-                            <p>Provides a framework for application developers to use state machine concepts with Spring applications.</p>
-                        </div>
-                    </div>
-                    <div class="project bg-white">
-                        <div class="project-icon-header">
-                            <img src="/assets/img/spring-vault-icon.svg">
-                        <div class="project-header">
-                            <p class="bold">Spring Vault</p>
-                        </div>
-                        </div>
-                        <div class="project-description">
-                            <p>Provides familiar Spring abstractions for HashiCorp Vault</p>
-                        </div>
-                    </div>
-                    <div class="project bg-white">
-                        <div class="project-icon-header">
-                            <img src="/assets/img/spring-web-flo-icon.svg">
-                        <div class="project-header">
-                            <p class="bold">Spring Web Flow</p>
-                        </div>
-                        </div>
-                        <div class="project-description">
-                            <p>Supports building web applications<br> that feature controlled navigation,<br> such as checking in for a flight or <br> applying for a loan.</p>
-                        </div>
-                    </div>
-                    <div class="project bg-white">
-                        <div class="project-icon-header">
-                            <img src="/assets/img/logo-web-services-icon.svg">
-                        <div class="project-header">
-                            <p class="bold">Spring Web Services</p>
-                        </div>
-                        </div>
-                        <div class="project-description">
-                            <p>Facilitates the development<br> of contract-first SOAP web services.</p>
-                        </div>
-                    </div>    
+        <div class="container">
+          <section>
+            <div class="projects">
+              <div class="project bg-white">
+                <div class="project-icon-header">
+                  <img
+                    src="/assets/img/spring-boot-icon.svg"
+                    alt="Spring Boot"
+                  />
+                  <div class="project-header">
+                    <p class="bold">Spring Boot</p>
+                  </div>
                 </div>
-              </section>
-          </div>
+                <div class="project-description">
+                  <p>
+                    Takes an opinionated view of building Spring applications
+                    and gets you up and running as quickly as possible.
+                  </p>
+                </div>
+              </div>
+              <div class="project bg-white">
+                <div class="project-icon-header">
+                  <img
+                    src="/assets/img/spring-framework-icon.svg"
+                    alt="Spring Framework"
+                  />
+                  <div class="project-header">
+                    <p class="bold">Spring Framework</p>
+                  </div>
+                </div>
+                <div class="project-description">
+                  <p>
+                    Provides core support for dependency <br />
+                    injection, transaction management, web apps, data access,
+                    messaging, and more.
+                  </p>
+                </div>
+              </div>
+              <div class="project bg-white">
+                <div class="project-icon-header">
+                  <img
+                    src="/assets/img/spring-data-icon.svg"
+                    alt="Spring Data"
+                  />
+                  <div class="project-header">
+                    <p class="bold">Spring Data</p>
+                  </div>
+                </div>
+                <div class="project-description">
+                  <p>
+                    Provides a consistent approach to data <br />
+                    access – relational, non-relational,<br />
+                    map-reduce, and beyond.
+                  </p>
+                </div>
+              </div>
+              <div class="project bg-white">
+                <div class="project-icon-header">
+                  <img
+                    src="/assets/img/spring-cloud-icon.svg"
+                    alt="Spring Cloud"
+                  />
+                  <div class="project-header">
+                    <p class="bold">Spring Cloud</p>
+                  </div>
+                </div>
+                <div class="project-description">
+                  <p>
+                    Provides a set of tools for common patterns in distributed
+                    systems. Useful for building and deploying microservices.
+                  </p>
+                </div>
+              </div>
+              <div class="project bg-white">
+                <div class="project-icon-header">
+                  <img
+                    src="/assets/img/spring-data-flow-icon.svg"
+                    alt="Spring Cloud Data Flow"
+                  />
+                  <div class="project-header">
+                    <p class="bold">Spring Cloud Data Flow</p>
+                  </div>
+                </div>
+                <div class="project-description">
+                  <p>
+                    Provides an orchestration service for<br />
+                    composable data microservice applications on modern
+                    runtimes.
+                  </p>
+                </div>
+              </div>
+              <div class="project bg-white">
+                <div class="project-icon-header">
+                  <img
+                    src="/assets/img/spring-security-icon.svg"
+                    alt="Spring Security"
+                  />
+                  <div class="project-header">
+                    <p class="bold">Spring Security</p>
+                  </div>
+                </div>
+                <div class="project-description">
+                  <p>
+                    Protects your application with comprehensive and extensible
+                    authentication and authorization support.
+                  </p>
+                </div>
+              </div>
+              <div class="project bg-white">
+                <div class="project-icon-header">
+                  <img
+                    src="/assets/img/spring-graphql-icon.svg"
+                    alt="Spring for GraphQ"
+                  />
+                  <div class="project-header">
+                    <p class="bold">Spring for GraphQL</p>
+                  </div>
+                </div>
+                <div class="project-description">
+                  <p>
+                    Spring for GraphQL provides support for Spring applications
+                    built on GraphQL Java.
+                  </p>
+                </div>
+              </div>
+              <div class="project bg-white">
+                <div class="project-icon-header">
+                  <img
+                    src="/assets/img/logo-session-icon.png"
+                    alt="Spring Session"
+                  />
+                  <div class="project-header">
+                    <p class="bold">Spring Session</p>
+                  </div>
+                </div>
+                <div class="project-description">
+                  <p>
+                    Provides an API and implementations for managing a user’s
+                    session information.
+                  </p>
+                </div>
+              </div>
+              <div class="project bg-white">
+                <div class="project-icon-header">
+                  <img
+                    src="/assets/img/spring-integration-icon.svg"
+                    alt="Spring Integration"
+                  />
+                  <div class="project-header">
+                    <p class="bold">Spring Integration</p>
+                  </div>
+                </div>
+                <div class="project-description">
+                  <p>
+                    Supports the well-known Enterprise Integration Patterns
+                    through lightweight messaging and declarative adapters.
+                  </p>
+                </div>
+              </div>
+              <div class="project bg-white">
+                <div class="project-icon-header">
+                  <img
+                    src="/assets/img/spring-hateoas-icon.svg"
+                    alt="Spring HATEOAS"
+                  />
+                  <div class="project-header">
+                    <p class="bold">Spring HATEOAS</p>
+                  </div>
+                </div>
+                <div class="project-description">
+                  <p>
+                    Simplifies creating REST representations that follow the
+                    HATEOAS principle.
+                  </p>
+                </div>
+              </div>
+              <div class="project bg-white">
+                <div class="project-icon-header">
+                  <img
+                    src="/assets/img/spring-restdocs-icon.png"
+                    alt="Spring REST Docs"
+                  />
+                  <div class="project-header">
+                    <p class="bold">Spring REST Docs</p>
+                  </div>
+                </div>
+                <div class="project-description">
+                  <p>
+                    Lets you document RESTful services by combining hand-written
+                    documentation with auto-generated snippets produced with
+                    Spring MVC Test or REST Assured.
+                  </p>
+                </div>
+              </div>
+              <div class="project bg-white">
+                <div class="project-icon-header">
+                  <img
+                    src="/assets/img/spring-batch-icon.svg"
+                    alt="Spring Batch"
+                  />
+                  <div class="project-header">
+                    <p class="bold">Spring Batch</p>
+                  </div>
+                </div>
+                <div class="project-description">
+                  <p>
+                    Simplifies and optimizes the work of <br />
+                    processing high-volume batch operations.
+                  </p>
+                </div>
+              </div>
+              <div class="project bg-white">
+                <div class="project-icon-header">
+                  <img
+                    src="/assets/img/spring-amqp-icon.svg"
+                    alt="Spring AMQP"
+                  />
+                  <div class="project-header">
+                    <p class="bold">Spring AMQP</p>
+                  </div>
+                </div>
+                <div class="project-description">
+                  <p>
+                    Applies core Spring concepts to the development of
+                    AMQP-based messaging solutions.
+                  </p>
+                </div>
+              </div>
+              <div class="project bg-white">
+                <div class="project-icon-header">
+                  <img
+                    src="/assets/img/spring-credHub-icon.svg"
+                    alt="Spring CredHub"
+                  />
+                  <div class="project-header">
+                    <p class="bold">Spring CredHub</p>
+                  </div>
+                </div>
+                <div class="project-description">
+                  <p>
+                    Provides client-side support for storing, retrieving, and
+                    deleting credentials from a CredHub server running in a
+                    Cloud Foundry platform.
+                  </p>
+                </div>
+              </div>
+              <div class="project bg-white">
+                <div class="project-icon-header">
+                  <img src="/assets/img/spring-flo-icon.svg" alt="Spring Flo" />
+                  <div class="project-header">
+                    <p class="bold">Spring Flo</p>
+                  </div>
+                </div>
+                <div class="project-description">
+                  <p>
+                    Provides a JavaScript library that offers a basic embeddable
+                    HTML5 visual builder for pipelines and simple graphs.
+                  </p>
+                </div>
+              </div>
+              <div class="project bg-white">
+                <div class="project-icon-header">
+                  <img
+                    src="/assets/img/spring-kafka-icon.svg"
+                    alt="Spring Apache Kafka"
+                  />
+                  <div class="project-header">
+                    <p class="bold">Spring Apache Kafka</p>
+                  </div>
+                </div>
+                <div class="project-description">
+                  <p>Provides Familiar Spring Abstractions for Apache Kafka.</p>
+                </div>
+              </div>
+              <div class="project bg-white">
+                <div class="project-icon-header">
+                  <img
+                    src="/assets/img/spring-ldap-icon.svg"
+                    alt="Spring LDAP"
+                  />
+                  <div class="project-header">
+                    <p class="bold">Spring LDAP</p>
+                  </div>
+                </div>
+                <div class="project-description">
+                  <p>
+                    Simplifies the development of applications that use LDAP by
+                    using Spring's familiar template-based approach.
+                  </p>
+                </div>
+              </div>
+              <div class="project bg-white">
+                <div class="project-icon-header">
+                  <img
+                    src="/assets/img/spring-shell-icon.svg"
+                    alt="Spring Shell"
+                  />
+                  <div class="project-header">
+                    <p class="bold">Spring Shell</p>
+                  </div>
+                </div>
+                <div class="project-description">
+                  <p>
+                    Makes writing and testing RESTful<br />
+                    applications easier with CLI-based<br />
+                    resource discovery and interaction.
+                  </p>
+                </div>
+              </div>
+              <div class="project bg-white">
+                <div class="project-icon-header">
+                  <img
+                    src="/assets/img/spring-statemachine-icon.svg"
+                    alt="Spring Statemachine"
+                  />
+                  <div class="project-header">
+                    <p class="bold">Spring Statemachine</p>
+                  </div>
+                </div>
+                <div class="project-description">
+                  <p>
+                    Provides a framework for application developers to use state
+                    machine concepts with Spring applications.
+                  </p>
+                </div>
+              </div>
+              <div class="project bg-white">
+                <div class="project-icon-header">
+                  <img
+                    src="/assets/img/spring-vault-icon.svg"
+                    alt="Spring Vault"
+                  />
+                  <div class="project-header">
+                    <p class="bold">Spring Vault</p>
+                  </div>
+                </div>
+                <div class="project-description">
+                  <p>
+                    Provides familiar Spring abstractions for HashiCorp Vault
+                  </p>
+                </div>
+              </div>
+              <div class="project bg-white">
+                <div class="project-icon-header">
+                  <img
+                    src="/assets/img/spring-web-flo-icon.svg"
+                    alt="Spring Web Flow"
+                  />
+                  <div class="project-header">
+                    <p class="bold">Spring Web Flow</p>
+                  </div>
+                </div>
+                <div class="project-description">
+                  <p>
+                    Supports building web applications<br />
+                    that feature controlled navigation,<br />
+                    such as checking in for a flight or <br />
+                    applying for a loan.
+                  </p>
+                </div>
+              </div>
+              <div class="project bg-white">
+                <div class="project-icon-header">
+                  <img
+                    src="/assets/img/logo-web-services-icon.svg"
+                    alt="Spring Web Services"
+                  />
+                  <div class="project-header">
+                    <p class="bold">Spring Web Services</p>
+                  </div>
+                </div>
+                <div class="project-description">
+                  <p>
+                    Facilitates the development<br />
+                    of contract-first SOAP web services.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </section>
+        </div>
       </div>
     </div>
   </body>
