@@ -79,6 +79,11 @@ nav ul li:hover ul {
   font-weight: lighter;
 }
 
+nav ul li:active ul {
+    display: block;
+    font-weight: lighter;
+  }
+
 .projects {
   margin-left: 20%;
   display: grid;
