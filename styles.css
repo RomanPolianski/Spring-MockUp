@@ -3,7 +3,7 @@
 }
 
 .app-wrapper {
-  max-width: 1300px;
+  width: 100%;
   margin: 0 auto;
 }
 
@@ -72,6 +72,7 @@ nav ul li a {
   background: #fff;
   border-radius: 3%;
   margin-top: 1%;
+  box-sizing: content-box;
 }
 
 .nav-arrow ul li:hover a {
@@ -162,11 +163,14 @@ i {
   list-style-type: none;
   padding: 0;
   min-width: 705px;
-  margin: 0 0px;
 }
 
 .has-menu span:hover {
   color: rgb(55, 196, 79);
+}
+
+.has-menu {
+  padding: 15px 20px;
 }
 
 .nav {
@@ -301,6 +305,7 @@ i {
   .projects {
     max-width: 100%;
     margin-left: 0%;
+    padding: 5% 5%;
   }
   .project {
     margin-top: 0%;
@@ -335,7 +340,7 @@ i {
 
   .project {
     margin-left: 0px;
-    margin-top: 10%;
+    margin-top: 5%;
     width: 95%;
     height: 80%;
   }
@@ -356,5 +361,11 @@ i {
 
   .wrapper__menu-link:hover {
     padding-right: 5px;
+  }
+}
+
+@media (max-width: 250px) {
+  .spring-logo {
+    visibility: hidden;
   }
 }
