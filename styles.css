@@ -336,17 +336,28 @@ i {
   .projects {
     margin-left: 0px;
     grid-template-columns: 5fr;
+    padding: 0px 0px;
   }
 
   .project {
     margin-left: 0px;
     margin-top: 5%;
-    width: 95%;
-    height: 80%;
+  }
+
+  .project-header {
+    font-size: 16px;
   }
 }
 
 @media (max-width: 350px) {
+  .project img {
+    width: 40px;
+    height: 40px;
+  }
+
+  .project {
+      height: 300px;
+  }
   .wrapper__menu {
     width: 40%;
     height: 60%;
@@ -367,5 +378,14 @@ i {
 @media (max-width: 250px) {
   .spring-logo {
     visibility: hidden;
+  }
+
+  .project {
+    width: 200px;
+    height: 350px;
+  }
+
+  .projects {
+    padding: 0 0;
   }
 }
