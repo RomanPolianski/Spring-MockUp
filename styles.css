@@ -71,7 +71,7 @@ nav ul li a {
   box-shadow: 0 10px 70px 2px rgba(0, 0, 0, 0.2);
   background: #fff;
   border-radius: 3%;
-  margin-top: 1%;
+  margin-top: 0.5%;
   box-sizing: content-box;
 }
 
@@ -144,7 +144,7 @@ i {
 }
 
 .project-description {
-  margin-left: 25%;
+  margin-left: 27%;
   hyphens: auto;
   line-height: 1.5;
   font-size: 16px;
@@ -154,6 +154,10 @@ i {
 
 .container-flex-header {
   display: flex;
+}
+
+.content {
+  padding-bottom: 5%;
 }
 
 .header-options {
@@ -319,17 +323,18 @@ i {
     margin-left: 15%;
   }
 
-  .wrapper {
-    display: block;
-  }
-
-  .header-options {
-    display: none;
-  }
-
   .spring-logo {
     width: 120px;
     height: 60px;
+  }
+}
+
+@media (max-width: 900px) {
+  .header-options {
+    display: none;
+  }
+  .wrapper {
+    display: block;
   }
 }
 
