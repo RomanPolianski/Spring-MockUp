@@ -8,7 +8,7 @@
       content="width=device-width, initial-scale=1.0, , maximum-scale=1.0, user-scalable=0"
     />
     <link rel="stylesheet" type="text/css" href="styles.css" />
-    <title>Spring</title>
+    <title>Spring | Projects</title>
   </head>
   <body>
     <div class="app-wrapper">
@@ -21,145 +21,7 @@
               src="assets/img/spring-logo.svg"
               alt="Spring"
             />
-            <div class="wrapper">
-              <input type="checkbox" id="checkbox" class="wrapper__checkbox" />
-              <label for="checkbox" class="wrapper__button">
-                <span class="wrapper__button-line"></span>
-                <span class="wrapper__button-line"></span>
-                <span class="wrapper__button-line"></span>
-              </label>
-              <div class="wrapper__menu">
-                <ul>
-                  <li>
-                    <a href="#" class="wrapper__menu-link">Why Spring</a>
-                  </li>
-                  <li>
-                    <a href="#" class="wrapper__menu-link">Learn </a>
-                  </li>
-                  <li>
-                    <a href="#" class="wrapper__menu-link">Projects</a>
-                  </li>
-                  <li>
-                    <a href="#" class="wrapper__menu-link">Training</a>
-                  </li>
-                  <li>
-                    <a href="#" class="wrapper__menu-link">Support</a>
-                  </li>
-                  <li>
-                    <a href="#" class="wrapper__menu-link">Community</a>
-                  </li>
-                </ul>
-              </div>
-            </div>
-            <ul class="header-options">
-              <li>
-                <div class="has-menu bold">
-                  <div class="has-submenu">
-                    <span>Why Spring </span><i class="arrow arrow-down"></i>
-                  </div>
-                  <div class="nav-arrow">
-                    <ul>
-                      <li><a href="#">Overview</a></li>
-                      <li><a href="#">Microservices</a></li>
-                      <li><a href="#">Reactive</a></li>
-                      <li><a href="#">Event Driven</a></li>
-                      <li><a href="#">Cloud</a></li>
-                      <li><a href="#">Web Applications</a></li>
-                      <li><a href="#">Serverless</a></li>
-                      <li><a href="#">Batch</a></li>
-                    </ul>
-                  </div>
-                </div>
-              </li>
-              <li>
-                <div class="has-menu bold">
-                  <div class="has-submenu">
-                    <span>Learn </span><i class="arrow arrow-down"></i>
-                  </div>
-                  <div class="nav-arrow">
-                    <ul>
-                      <li><a href="#">Overview</a></li>
-                      <li><a href="#">Quickstart</a></li>
-                      <li><a href="#">Guides</a></li>
-                      <li><a href="#">Blog</a></li>
-                    </ul>
-                  </div>
-                </div>
-              </li>
-              <li>
-                <div class="has-menu bold">
-                  <div class="has-submenu">
-                    <span>Projects </span><i class="arrow arrow-down"></i>
-                  </div>
-                  <div class="nav-arrow">
-                    <ul>
-                      <li>
-                        <a href="#">Overview</a>
-                      </li>
-                      <li>
-                        <a href="#">Spring Boot</a>
-                      </li>
-                      <li>
-                        <a href="#">Spring Framework</a>
-                      </li>
-                      <li>
-                        <a href="#">Spring Cloud</a>
-                      </li>
-                      <li>
-                        <a href="#">Spring Cloud Data Flow</a>
-                      </li>
-                      <li>
-                        <a href="#">Spring Data</a>
-                      </li>
-                      <li>
-                        <a href="#">Spring Integration</a>
-                      </li>
-                      <li>
-                        <a href="#">Spring Batch</a>
-                      </li>
-                      <li>
-                        <a href="#">Spring Security</a>
-                      </li>
-                      <li>
-                        <a href="#">View all projects</a>
-                      </li>
-                      <li>
-                        <a href="#">Development Tools</a>
-                      </li>
-                      <li>
-                        <a href="#">Spring Tools 4</a>
-                      </li>
-                      <li>
-                        <a href="#">Spring Initializr</a>
-                      </li>
-                    </ul>
-                  </div>
-                </div>
-              </li>
-              <li>
-                <div class="has-menu bold">
-                  <span>Training</span>
-                </div>
-              </li>
-              <li>
-                <div class="has-menu bold">
-                  <span>Support</span>
-                </div>
-              </li>
-              <li>
-                <div class="has-menu bold">
-                  <div class="has-submenu">
-                    <span>Community </span><i class="arrow arrow-down"></i>
-                  </div>
-                  <div class="nav-arrow">
-                    <ul>
-                      <li><a href="/community">Overview</a></li>
-                      <li><a href="/events">Events</a></li>
-                      <li><a href="/team">Team</a></li>
-                    </ul>
-                  </div>
-                </div>
-              </li>
+            <ul class="header-options nav-arrow">
             </ul>
           </div>
         </nav>
@@ -563,5 +425,9 @@
         </div>
       </div>
     </div>
+    <script src="assets/constants/navItems.js"></script>
+    <script src="assets/constants/projectItems.js"></script>
+    <script src="assets/components/renderNavItems.js"></script>
+    <script src="assets/components/renderProjectItems.js"></script>
   </body>
 </html>

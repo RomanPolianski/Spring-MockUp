@@ -24,12 +24,21 @@ a {
   font-weight: lighter;
 }
 
+.uppercase-text {
+    text-transform: uppercase;
+    padding: 5px 0;
+}
+
 .bg-white {
   background-color: #fff;
 }
 
 .bg-grey {
   background: rgb(225, 236, 238);
+}
+
+.blue-link {
+    color: blue;
 }
 
 .h1 {
@@ -71,7 +80,6 @@ nav ul li a {
   box-shadow: 0 10px 70px 2px rgba(0, 0, 0, 0.2);
   background: #fff;
   border-radius: 3%;
-  margin-top: 0.5%;
   box-sizing: content-box;
 }
 
