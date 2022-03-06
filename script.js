@@ -54,3 +54,63 @@ if (iconMenu) {
         menuBody.classList.toggle('_active');
     })
 }
+
+document.querySelector('.proj-input').oninput = function () {
+    setTimeout(() => {
+      let val = this.value.trim().toLowerCase();
+      let projects = PROJECTS;
+      let htmlCatalog = "";
+      if (val !== '') {
+        let filteredArr = projects.filter(({ title, text }) => {
+          return title.toLowerCase().indexOf(val) !== -1 || text.toLowerCase().indexOf(val) !== -1
+        })
+        if (filteredArr.length === 0) {
+          htmlCatalog = `
+        <div>
+          <h1 class = 'no-results'>No Results</h1>
+        </div>
+        `
+        } else {
+          htmlCatalog += filteredArr.reduce((html, { imageUrl, title, text }) => {
+            return html += `
+            <div class="project bg-white">
+              <div class="project-icon-header">
+                <img class="project-icon-header" src=${imageUrl}/>
+                <div class="project-header">
+                <h3 class="bold">${title}</h3>
+              </div>
+              </div>
+                <div class="project-description">
+                  <p >${text}</p>
+                </div>
+            </div>
+             `
+          }, ``)
+        }
+      } else {
+        projects.forEach(({ imageUrl, title, text }) => {
+          htmlCatalog += `
+          <div class="project bg-white">
+          <div class="project-icon-header">
+            <img class="project-icon-header" src=${imageUrl}/>
+            <div class="project-header">
+            <h3 class="bold">${title}</h3>
+          </div>
+          </div>
+            <div class="project-description">
+              <p >${text}</p>
+            </div>
+        </div>
+          `;
+        });
+      }
+      const html = `
+          <div class="projects">
+            ${htmlCatalog}
+          </div>
+      `;
+      Array.from(ROOT_PROJECT_ITEMS).forEach(item => {
+        item.innerHTML = html
+      })
+    }, 300)
+  }

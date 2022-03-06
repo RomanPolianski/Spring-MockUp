@@ -64,13 +64,13 @@ a {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  max-width: 1140px;
-  padding: 0px 20px;
+  padding: 0% 5%;
   margin: 0px auto;
 }
 
 .menu-body {
   border-bottom: 1px rgb(235, 228, 228) solid;
+  z-index: 15;
 }
 
 .menu-arrow {
@@ -99,6 +99,7 @@ body._pc .menu-list > li:hover .menu-sublist {
   opacity: 1;
   visibility: visible;
   pointer-events: all;
+  z-index: 10;
 }
 
 body._touch .nav-item {
@@ -113,7 +114,6 @@ body._touch .menu-arrow {
   border-left: 5px solid transparent;
   border-right: 5px solid transparent;
   border-top: 10px solid #fff;
-  transition: transform 0.4s ease 0s;
 }
 
 body._touch .menu-list > li._active .menu-sublist {
@@ -137,22 +137,47 @@ body._touch .menu-list > li._active .menu-sublist {
 }
 
 .projects {
-  margin-left: 20%;
   display: grid;
-  grid-template-columns: 5fr 5fr;
+  grid-template-columns: 50% 50%;
+  padding-right: 3%;
+}
+
+.proj-input {
+  position: relative;
+  left: 32%;
+  margin: 35px auto;
+  padding: 10px;
+  border: 2px solid #eee;
+  border-radius: 10px;
+  width: 30%;
+  font-size: 1rem;
+  box-shadow: 0 0 15px 4px rgba(0, 0, 0, 0.06);
+  transform: translateY(0);
+  transition: all 0.2s;
+}
+
+.proj-input:focus {
+  outline: none;
+  box-shadow: none;
+  transform: translateY(-3px);
+  transition: all 0.5s ease 0;
 }
 
 .project {
+  display: block;
   margin-top: 3%;
   width: 90%;
-  height: 95%;
+  height: 90%;
   border-radius: 5px;
   padding-right: 5%;
-  box-sizing: border-box;
+  transform: translateY(0);
+  transition: all 0.2s;
 }
 
 .project:hover {
   box-shadow: 0 10px 70px rgba(0, 0, 0, 0.2);
+  transform: translateY(-3px);
+  transition: all 0.2s ease 0s;
 }
 
 .project-icon-header {
@@ -169,24 +194,21 @@ body._touch .menu-list > li._active .menu-sublist {
 
 .project-header {
   font-size: 24px;
-  margin-top: 5%;
+  display: block;
 }
 
 .project-description {
-  margin-left: 27%;
+  margin-left: 21%;
   hyphens: auto;
   line-height: 1.5;
   font-size: 16px;
+  display: block;
   margin-bottom: 10%;
-  padding-bottom: 3%;
-}
-
-.container-flex-header {
-  display: flex;
 }
 
 .container-flex-header-mobile {
   display: none;
+  padding: 0% 5%;
 }
 
 .content {
@@ -220,26 +242,8 @@ body._touch .menu-list > li._active .menu-sublist {
 }
 
 @media (max-width: 1000px) {
-  .app-wrapper {
-    max-width: 100%;
-    margin-left: 0;
-    padding-left: 0;
-  }
-  .projects {
-    max-width: 100%;
-    margin-left: 3%;
-    padding: 5% 5%;
-  }
-  .project {
-    margin-top: 0%;
-    margin-left: 0%;
-    width: 90%;
-    height: 80%;
-    border-radius: 5px;
-  }
-
   .project-description {
-    margin-left: 15%;
+    margin-left: 30%;
   }
 
   .spring-logo {
@@ -279,7 +283,7 @@ body._touch .menu-list > li._active .menu-sublist {
   }
 
   .menu-icon {
-    z-index: 5;
+    z-index: 25;
     display: block;
     position: absolute;
     right: 15px;
@@ -358,7 +362,6 @@ body._touch .menu-list > li._active .menu-sublist {
 
   .menu-sublist li a {
     color: #fff;
-    z-index: 20;
   }
 
   .menu-body ul li ul {
@@ -372,24 +375,35 @@ body._touch .menu-list > li._active .menu-sublist {
   .app-wrapper {
     max-width: 100%;
   }
+
+  .proj-input {
+    position: relative;
+    left: 20%;
+    margin: 10px auto;
+    width: 50%;
+  }
+
   .projects {
     grid-template-columns: 5fr;
     padding: 0px 0px;
   }
 
   .project {
-    margin-left: 0px;
-    margin-top: 5%;
-    padding-right: 0%;
+    margin-left: 0;
+    margin-top: 3%;
   }
 
   .project-header {
     font-size: 16px;
   }
 
-  .content {
-    padding: 0% 0%;
-    margin: 0% 0%;
+  .project-description {
+    margin-left: 18%;
+    hyphens: auto;
+    line-height: 1.5;
+    font-size: 16px;
+    display: block;
+    margin-bottom: 10%;
   }
 }
 
@@ -400,8 +414,13 @@ body._touch .menu-list > li._active .menu-sublist {
   }
 
   .project {
-    height: 300px;
+    height: 200px;
   }
+
+  .project-description {
+    font-size: 14px;
+  }
+
   .wrapper__menu {
     width: 40%;
     height: 60%;
