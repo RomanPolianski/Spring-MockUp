@@ -5,15 +5,27 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta
       name="viewport"
-      content="width=device-width, initial-scale=1.0, , maximum-scale=1.0, user-scalable=0"
+      content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0"
     />
     <link rel="stylesheet" type="text/css" href="styles.css" />
     <title>Spring | Projects</title>
   </head>
   <body>
-    <div class="app-wrapper">
+    <div class="wrapper">
       <header>
-        <nav class="nav">
+        <div class="container-flex-header-mobile">
+          <img
+            id="springlogo"
+            class="spring-logo"
+            src="assets/img/spring-logo.svg"
+            alt="Spring"
+          />
+          <div class="menu-icon">
+            <span></span>
+          </div>
+        </div>
+        
+        <nav class="menu-body">
           <div class="container-flex-header">
             <img
               id="springlogo"
@@ -21,8 +33,10 @@
               src="assets/img/spring-logo.svg"
               alt="Spring"
             />
-            <ul class="header-options nav-arrow">
-            </ul>
+            <ul class="header-options menu-list"></ul>
+            <div>
+              <ul class="header-options-mobile"></ul>
+            </div>
           </div>
         </nav>
       </header>
@@ -429,5 +443,6 @@
     <script src="assets/constants/projectItems.js"></script>
     <script src="assets/components/renderNavItems.js"></script>
     <script src="assets/components/renderProjectItems.js"></script>
+    <script src="script.js"></script>
   </body>
 </html>
