@@ -100,7 +100,7 @@ document.querySelector('.proj-input').oninput = function () {
             <div class="project-description">
               <p >${text}</p>
             </div>
-        </div>
+          </div>
           `;
         });
       }
