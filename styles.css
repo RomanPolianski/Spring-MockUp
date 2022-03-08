@@ -382,7 +382,7 @@ body._lock .container-flex-header-mobile {
     height: 100%;
     background-color: rgba(11, 11, 12, 0.99);
     transition: all 0.4s ease 0s;
-    transform: translate(0px, 100%);
+    transform: translate(0px, 130%);
   }
 
   .menu-body._active {
@@ -424,7 +424,6 @@ body._lock .container-flex-header-mobile {
     visibility: visible;
     pointer-events: all;
     width: 100%;
-    /* height: 100%; */
     transform: translate(0px, 0px);
   }
 
